@@ -1,0 +1,75 @@
+#canvas {  
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 500px;
+  height: 500px;
+}
+
+#container { 
+  border-color: #588157 !important;
+  border: 5px solid;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+}
+
+.square-div{
+  border: 0.5px solid lightgrey;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1{
+  color: #344e41;
+  background-color: #a3b18a;
+  padding: 10px 40px;
+  border-radius: 20px;
+}
+
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #dad7cd;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+}
+
+.options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.clear-board{
+  margin-left: 50px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  background-color: #3a5a40;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.color-button{
+  margin-left: 10px;
+}
+
+.grid-size{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+label{
+  color: #344e41;
+}
