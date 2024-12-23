@@ -11,9 +11,9 @@ function activateCanvas(gridSize){
     for (i=0; i < (gridSize * gridSize); i++){
         let squareDivs = document.createElement('div');
         squareDivs.className = 'square-div';
-        let squareSize = 500 / gridSize;
-        squareDivs.style.width = `${squareSize}px`;
-        squareDivs.style.height = `${squareSize}px`;
+        let squareSize = 100 / gridSize;
+        squareDivs.style.width = `${squareSize}%`;
+        squareDivs.style.height = `${squareSize}%`;
         canvas.appendChild(squareDivs);
 
         //change input color
@@ -26,6 +26,7 @@ function activateCanvas(gridSize){
                 ifClick = true;
             }
         })
+
         //hover and change cell colors
         squareDivs.addEventListener("mouseover", () => {
             if (ifClick){
