@@ -2,6 +2,7 @@ const canvas = document.querySelector("#canvas");
 const clear = document.querySelector('#clear');
 const submit = document.querySelector('#submit');
 let gridDimensions = document.querySelector('#gridSize').value;
+let ifClick = false;
 let color = '#000000';
 
 
@@ -20,10 +21,21 @@ function activateCanvas(gridSize){
             color = this.value;
         })
         
+        squareDivs.addEventListener("mousedown", (event) => {
+            if (event.button === 0) {
+                ifClick = true;
+            }
+        })
         //hover and change cell colors
         squareDivs.addEventListener("mouseover", () => {
-            squareDivs.style.backgroundColor = color;
-            squareDivs.style.borderColor = color;
+            if (ifClick){
+                squareDivs.style.backgroundColor = color;
+                squareDivs.style.borderColor = color;
+            }
+        })
+
+        squareDivs.addEventListener("mouseup", (event) => {
+            ifClick = false;
         })
     }
 }
